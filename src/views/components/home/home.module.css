@@ -1,0 +1,33 @@
+/** @format */
+
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto 20px;
+  /* height: 60vh; */
+}
+.title {
+  font-size: 66px;
+  color: #2f77ad;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 38px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .holder {
+    height: auto;
+    gap: 50px;
+    text-align: center;
+    padding: auto 20px;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
