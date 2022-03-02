@@ -26,7 +26,7 @@ function FeaturesAndBenefits() {
         // background: 'rgba(56, 182, 233,.1)',
       }}
     >
-      <div style={{ textAlign: 'center' }}>
+      <div style={{ textAlign: 'center', marginLeft: 20 }}>
         <p className={styles.title}>Features {'&'} Benefits</p>
         <p
           style={{
