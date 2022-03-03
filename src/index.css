@@ -16,3 +16,46 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+::placeholder{
+  color: #BDBDBD;
+}
+
+input, textarea{
+  
+  outline: none;
+}
+input:focus, textarea:focus{
+  border: 2px solid #45b1e8;
+}
+.imageTemplate{
+  max-width: 625px;
+  width: 100%;
+}
+/* 
+.imageTemplate:hover{
+  filter: brightness(0.65);
+} */
+.TemplateContainer{
+  position: relative;
+}
+.link{
+  display: none;
+}
+.imageTemplate:hover + .link, .link:hover{
+
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  background-color: #424242;
+  border-radius: 16px;
+  padding-inline: 20px;
+  padding-block: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: translate(50%, -50%);
+}
+.link:hover{
+  background-color: #2F77AD;
+}
