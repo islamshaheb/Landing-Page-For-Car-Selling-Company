@@ -14,7 +14,9 @@ function Header() {
         position: 'sticky',
         top: 0,
         width: '100%',
-        background: '#ffffff',
+        background: '#ffffff75',
+        backdropFilter: 'blur(15px)',
+        zIndex: 3,
       }}
     >
       <div
