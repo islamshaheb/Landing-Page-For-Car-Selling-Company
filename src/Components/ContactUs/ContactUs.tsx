@@ -1,5 +1,7 @@
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import axios from 'axios';
+
 
 type Inputs = {
   name: string;
@@ -7,14 +9,31 @@ type Inputs = {
   message: string;
 };
 
-function ContactUs() {
+function ContactUs({reference}:any) {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
+    reset
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    console.log(data);
+    const mailObj = {
+      name: data.name,
+      email:data.email,
+      subject:"Contacting From Landing Page",
+      message:data.message
+
+    }
+    let response = await axios.post(`http://54.196.153.108:8080/api/contact`, mailObj);
+    // console.log(response.data);
+    alert(response.data.message || "Please try again later, Thank You.");
+    if(response.data.success){
+      reset();
+    }
+  }
+  console.log(errors)
 
   return (
     <div
@@ -29,7 +48,7 @@ function ContactUs() {
         paddingInline: "5vw",
       }}
     >
-      <h1 style={{ fontWeight: 700, marginBottom: 50, color: "#2F77AD" }}>
+      <h1 ref={reference} style={{ fontWeight: 700, marginBottom: 50, color: "#2F77AD", fontSize:"calc(16px + 3vw)" }}>
         Contact Us
       </h1>
       <div
@@ -90,11 +109,11 @@ function ContactUs() {
             }}
             placeholder="Email Address"
             id="Email"
-            {...register("email", { required: true })}
+            {...register("email", { required: {value:true, message:"This field is required"},  pattern: {value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message:"enter a valid email address"}  })}
           />
           {errors.email && (
             <p style={{ color: "red", margin: "5px 0 10px 0" }}>
-              This field is required
+              {errors.email.message}
             </p>
           )}
 
