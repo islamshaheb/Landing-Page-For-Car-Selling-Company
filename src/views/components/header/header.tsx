@@ -3,7 +3,7 @@
 import React from 'react';
 import logo from 'assets/logo.svg';
 import useWindowDimensions from 'views/components/useWindowDimensions/useWindowDimensions';
-function Header() {
+function Header({reference, click}:any) {
   const { Width } = useWindowDimensions();
   return (
     <div
@@ -29,7 +29,7 @@ function Header() {
         <div style={{}}>
           <img src={logo} alt='loadingimage' />
         </div>
-        <div style={{}}>
+        <div ref ={reference} style={{}}>
           <button
             style={{
               backgroundColor: '#2F77AD',
@@ -39,7 +39,9 @@ function Header() {
               fontSize: Width >= 550 ? 20 : 16,
               color: '#FFFFFF',
               border: 'none',
+              cursor:"pointer"
             }}
+            onClick={click}
           >
             Contact Us
           </button>

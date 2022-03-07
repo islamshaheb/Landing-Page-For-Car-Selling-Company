@@ -21,7 +21,7 @@ function TemplatesScreen() {
   }
   return (
     <div>
-      <h1 style={{ marginBlock: 30, textAlign: "center", color: "#2F77AD" }}>
+      <h1 style={{ marginBlock: 30, textAlign: "center", color: "#2F77AD", fontSize: "calc( 14px + 3vw)" }}>
         Fully Customizable Templates
       </h1>
       <div
