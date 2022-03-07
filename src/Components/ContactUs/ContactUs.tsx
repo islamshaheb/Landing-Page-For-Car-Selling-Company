@@ -143,7 +143,7 @@ function ContactUs({reference}:any) {
 
           <input
             type="submit"
-            value="Submit"
+            value="SEND MESSAGE"
             style={{
               marginBlock: 20,
               backgroundColor: "#2F77AD",
@@ -152,7 +152,9 @@ function ContactUs({reference}:any) {
               appearance: "none",
               border: "none",
               paddingBlock: 12,
-              cursor:"pointer"
+              cursor:"pointer",
+              fontWeight:600,
+              fontSize:16
             }}
           />
         </form>

@@ -66,7 +66,7 @@ function TemplatesScreen() {
             >
               <img src={viewDemo} alt="" />
             </div>
-            <h5 style={{ color: "white", marginLeft: 20 }}>
+            <h5 style={{ color: "white", marginLeft: 20, fontSize:"calc(0.7vw + 8px)" }}>
               Click to View Demo
             </h5>
           </div>
@@ -104,7 +104,7 @@ function TemplatesScreen() {
             >
               <img src={viewDemo} alt="" />
             </div>
-            <h5 style={{ color: "white", marginLeft: 20 }}>
+            <h5 style={{ color: "white", marginLeft: 20, fontSize:"calc(0.7vw + 8px)" }}>
               Click to View Demo
             </h5>
           </div>
