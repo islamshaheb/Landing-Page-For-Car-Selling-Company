@@ -21,7 +21,7 @@ function FeaturesAndBenefits() {
             ? '25px 30px 30px 0'
             : Width > 768
             ? '25px 8px 30px 20px'
-            : '15px 8px 30px 20px',
+            : '15px 2px 30px 2px',
         background: 'rgba(56, 182, 233,5%)',
         // background: 'rgba(56, 182, 233,.1)',
       }}
@@ -33,6 +33,7 @@ function FeaturesAndBenefits() {
             fontSize: Width >= 550 && Width <= 768 ? 34 : Width > 768 ? 30.5 : 16,
             fontWeight: 400,
             color: '#333333',
+            marginBottom: 20,
           }}
         >
           Spend less time explaining and more time doing.

@@ -7,7 +7,8 @@
   height: 250px;
   /* padding: 1rem; */
   width: 300px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 0px 2px 40px 0px #0000001a;
   /* height: 60vh; */
 }
 .inneritems {
@@ -51,12 +52,13 @@
 
 @media screen and (max-width: 550px) {
   .eachItem {
-    height: auto;
-    gap: 50px;
+    height: 200px;
     text-align: center;
-    padding: auto 20px;
-    width: 220px;
+    padding: 0 5px;
+    width: 138px;
+    /* background-color: yellowgreen; */
   }
+
   .title {
     font-size: 30px;
     font-weight: 700;
@@ -66,5 +68,10 @@
   }
   .featPara {
     font-size: 10px;
+  }
+  .inneritems {
+    gap: 10px;
+    padding: 1rem 0.5rem;
+    /* background-color: red; */
   }
 }

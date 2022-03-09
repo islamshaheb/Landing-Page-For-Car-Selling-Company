@@ -55,7 +55,9 @@ function HowItWorks() {
               style={{
                 textAlign: 'center',
                 height: 45,
-                width: 45,
+                // width: '405px !important',
+                width: Width < 900 ? 47 : 60,
+
                 borderRadius: '50%',
                 background: currentIndex === 0 ? '#38B6E9' : '#BDBDBD',
                 cursor: 'pointer',
@@ -87,7 +89,7 @@ function HowItWorks() {
               style={{
                 textAlign: 'center',
                 height: 45,
-                width: 45,
+                width: 48,
                 borderRadius: '50%',
                 background: currentIndex === 1 ? '#38B6E9' : '#BDBDBD',
                 cursor: 'pointer',

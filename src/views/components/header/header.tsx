@@ -3,18 +3,18 @@
 import React from 'react';
 import logo from 'assets/logo.svg';
 import useWindowDimensions from 'views/components/useWindowDimensions/useWindowDimensions';
-function Header({reference, click}:any) {
+function Header({ reference, click }: any) {
   const { Width } = useWindowDimensions();
   return (
     <div
       style={{
-        height: Width >= 550 ? 103 : 90,
+        height: Width >= 550 ? 103 : 70,
         // boxShadow: '0 4px 4px 0 rgba(0, 0, 0, 0.2)',
         borderBottom: '1px solid #D5D5D5',
         position: 'sticky',
         top: 0,
         width: '100%',
-        background: '#ffffff75',
+        background: '#ffffff80',
         backdropFilter: 'blur(15px)',
         zIndex: 3,
       }}
@@ -27,19 +27,20 @@ function Header({reference, click}:any) {
         }}
       >
         <div style={{}}>
-          <img src={logo} alt='loadingimage' />
+          <img src={logo} width={Width >= 550 ? 'auto' : '120px'} alt='loadingimage' />
         </div>
-        <div ref ={reference} style={{}}>
+        <div ref={reference} style={{}}>
           <button
             style={{
               backgroundColor: '#2F77AD',
-              padding: '1rem',
-              fontWeight: Width >= 550 ? 700 : 600,
+
+              fontWeight: Width >= 550 ? 700 : 400,
+              padding: Width >= 550 ? '1rem' : '.7rem 1rem',
               borderRadius: 8,
-              fontSize: Width >= 550 ? 20 : 16,
+              fontSize: Width >= 550 ? 20 : 12,
               color: '#FFFFFF',
               border: 'none',
-              cursor:"pointer"
+              cursor: 'pointer',
             }}
             onClick={click}
           >
