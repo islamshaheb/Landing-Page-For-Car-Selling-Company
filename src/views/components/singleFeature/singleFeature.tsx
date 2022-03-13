@@ -20,7 +20,7 @@ function SingleFeatue(value: props) {
         <img
           src={value.imgLink}
           height={Width >= 550 ? '106px' : '70px'}
-          width={Width >= 550 ? 'auto' : '70px'}
+          width={Width >= 550 ? (Width > 768 ? 'auto' : '90px') : '70px'}
           alt='imgLoading'
           className={styles.eachImages}
         />

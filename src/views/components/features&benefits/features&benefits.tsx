@@ -23,6 +23,7 @@ function FeaturesAndBenefits() {
             ? '25px 8px 30px 20px'
             : '15px 2px 30px 2px',
         background: 'rgba(56, 182, 233,5%)',
+        borderRadius: '150px 0 150px 0',
         // background: 'rgba(56, 182, 233,.1)',
       }}
     >
@@ -30,7 +31,7 @@ function FeaturesAndBenefits() {
         <p className={styles.title}>Features {'&'} Benefits</p>
         <p
           style={{
-            fontSize: Width >= 550 && Width <= 768 ? 34 : Width > 768 ? 30.5 : 16,
+            fontSize: Width >= 550 && Width <= 768 ? 22 : Width > 768 ? 30.5 : 16,
             fontWeight: 400,
             color: '#333333',
             marginBottom: 20,

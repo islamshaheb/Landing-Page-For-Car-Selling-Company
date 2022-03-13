@@ -32,9 +32,10 @@ function Home() {
 
           <p
             style={{
-              fontSize: Width >= 550 && Width <= 768 ? 34 : Width > 768 ? 30.5 : 16,
+              fontSize: Width >= 550 && Width <= 768 ? 22 : Width > 768 ? 30.5 : 16,
               fontWeight: 400,
               color: '#333333',
+              whiteSpace: 'nowrap',
             }}
           >
             Quick and secure way to sell <br /> your car with great profit.
