@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin: auto 20px;
+  /* text-align: center; */
   /* height: 60vh; */
 }
 .title {
@@ -12,10 +13,34 @@
   color: #2f77ad;
   font-weight: 700;
 }
+
+.button {
+  height: 67px;
+  width: 217px;
+  border-radius: 10px;
+  background-color: #38b6e9;
+  cursor: pointer;
+  box-shadow: 2px 4px 20px 0px #38b6e9b2;
+}
+.buttonText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  background-color: inherit;
+  cursor: inherit;
+}
+
 @media screen and (max-width: 768px) {
   .title {
     font-size: 38px;
     font-weight: 700;
+  }
+  .button {
+    height: 60px;
+    width: 180px;
   }
 }
 
@@ -29,5 +54,12 @@
   .title {
     font-size: 30px;
     font-weight: 700;
+  }
+  .button {
+    height: 50px;
+    width: 150px;
+    border-radius: 8px;
+    background-color: #38b6e9;
+    cursor: pointer;
   }
 }
