@@ -7,6 +7,51 @@
   margin: auto 20px;
   /* text-align: center; */
   /* height: 60vh; */
+  /* background: red; */
+  /* opacity: 1;
+
+  animation: fadeIn 3s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  position: relative; */
+  /* animation: mymove 3s;
+  animation-fill-mode: backwards; */
+}
+.holder1 {
+  opacity: 0;
+  animation: holder1 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+.holder2 {
+  animation: holder2 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  position: relative;
+  opacity: 0;
+}
+@keyframes holder1 {
+  from {
+    top: 20px;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+
+    /* background-color: blue; */
+  }
+}
+@keyframes holder2 {
+  from {
+    opacity: 0;
+    right: 0px;
+  }
+  to {
+    opacity: 1;
+    right: 10px;
+  }
 }
 .title {
   font-size: 66px;

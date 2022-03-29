@@ -21,6 +21,7 @@ function Home({ reference, click }: any) {
     >
       <div className={styles.holder}>
         <div
+          className={styles.holder1}
           style={{
             // height: Width >= 550 ? '100vh' : 'auto',
             width: Width >= 550 ? '50%' : '100%',
@@ -74,6 +75,7 @@ function Home({ reference, click }: any) {
           </div>
         </div>
         <div
+          className={styles.holder2}
           style={{
             width: Width >= 550 ? '50%' : '100%',
             // background: 'yellow',
