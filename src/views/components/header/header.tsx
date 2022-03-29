@@ -23,7 +23,15 @@ function Header({ reference, click }: any) {
         style={{
           display: 'flex',
           justifyContent: 'space-between',
-          padding: Width >= 550 ? '30px 64px 0' : '20px 8px 0',
+          padding:
+            Width >= 550 ? (Width >= 768 ? '30px 64px 0 22px' : '30px 64px 0 39px') : '20px 8px 0',
+
+          // padding:
+          //   Width >= 550 && Width <= 768
+          //     ? '25px 30px 30px 0'
+          //     : Width > 768
+          //     ? '11px 8px 0 20px'
+          //     : '15px 8px 0 20px',
         }}
       >
         <div style={{}}>
