@@ -17,7 +17,7 @@ function App() {
   const el2 = useRef();
 
   const scrollToDemo = (ref: any) =>
-    window.scrollTo({ top: ref.current.offsetTop - 100, behavior: 'auto' });
+    window.scrollTo({ top: ref.current.offsetTop - 100, behavior: 'smooth'  });
   const demo1 = useRef();
   const demo2 = useRef();
   return (
