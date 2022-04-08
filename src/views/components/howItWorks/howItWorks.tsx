@@ -1,8 +1,11 @@
 /** @format */
 
 import { useEffect, useState } from 'react';
-import step1 from 'assets/image for step 1.png';
-import step2 from 'assets/image for step 2.png';
+import step1 from 'assets/image for step 1 (2).png';
+import step2 from 'assets/image for step 2 (2).png';
+
+import step1ForWeb from 'assets/image for step 1.png';
+import step2ForWeb from 'assets/image for step 2.png';
 
 import s1 from 'assets/images/s1.png';
 import ss1 from 'assets/images/ss1.png';
@@ -27,7 +30,7 @@ function HowItWorks() {
   return (
     <div
       style={{
-        marginTop: 30,
+        marginTop: Width > 550 ? 20 : 0,
         marginBottom: 30,
         padding:
           Width >= 550 && Width <= 768
@@ -109,7 +112,7 @@ function HowItWorks() {
             >
               <img height='45px' width='45px' src={currentIndex === 1 ? s2 : ss2} alt='step 2' />
 
-              <p
+              {/* <p
                 style={{
                   display: 'none',
                   color: 'white',
@@ -119,7 +122,7 @@ function HowItWorks() {
                 }}
               >
                 2
-              </p>
+              </p> */}
             </div>
 
             <div className={styles.stepPara}>
@@ -210,7 +213,15 @@ function HowItWorks() {
         <div></div>
         <div className={styles.imgHolder}>
           <img
-            src={currentIndex === 0 ? step1 : step2}
+            src={
+              currentIndex === 0
+                ? Width > 768
+                  ? step1ForWeb
+                  : step1
+                : Width > 768
+                ? step2ForWeb
+                : step2
+            }
             className={styles.stepImg}
             alt='loading..'
           />

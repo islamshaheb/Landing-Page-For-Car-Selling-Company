@@ -23,7 +23,7 @@ function FeaturesAndBenefits() {
             ? '25px 8px 30px 20px'
             : '15px 2px 30px 2px',
         background: 'rgba(56, 182, 233,5%)',
-        borderRadius: '150px 0 150px 0',
+        borderRadius: Width > 768 ? '150px 0 150px 0' : '100px 0 100px 0',
         // background: 'rgba(56, 182, 233,.1)',
       }}
     >
