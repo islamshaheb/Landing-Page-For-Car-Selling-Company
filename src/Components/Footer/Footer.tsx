@@ -33,7 +33,7 @@ function Footer() {
         <img style={{ width: 32, height: 32, fontWeight:200 }} src={twitter} alt="tw" />
         <img style={{ width: 32, height: 32, fontWeight:200 }} src={instagram} alt="ins" />
       </div>
-      <p style={{marginBottom:40}}>&copy; Copyright FOYOB</p>
+      <p style={{marginBottom:40}}>&copy; Copyright Girmairi</p>
     </div>
   );
 }
